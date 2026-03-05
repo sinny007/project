@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jujutsu Portfolio Pro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+<div class="cursor"></div>
+
+<!-- Navbar -->
+<nav class="nav">
+  <h1>KEN ⚔️</h1>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <h1 class="title">KEN CURSED PORTFOLIO</h1>
+  <p class="subtitle">Jujutsu Student | Web Dev | Game Dev</p>
+  <a href="cv.pdf" download class="btn">Download CV</a>
+</section>
+
+<!-- About -->
+<section id="about" class="section" data-aos="fade-right">
+<h2>About Me</h2>
+<p>ผมเป็นนักศึกษาที่สนใจ Web & Game Development เป้าหมายคือ Full Stack Developer</p>
+</section>
+
+<!-- Skills Progress -->
+<section id="skills" class="section" data-aos="fade-left">
+<h2>Skills</h2>
+
+<div class="skill">
+  HTML/CSS
+  <div class="bar"><div style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+  JavaScript
+  <div class="bar"><div style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+  Unity C#
+  <div class="bar"><div style="width:70%"></div></div>
+</div>
+</section>
+
+<!-- Projects Gallery -->
+<section id="projects" class="section" data-aos="zoom-in">
+<h2>Projects</h2>
+<div class="grid">
+
+<div class="project-card" onclick="openModal('MangaStore Website')">
+<img src="img/project1.png">
+<p>MangaStore Web</p>
+</div>
+
+<div class="project-card" onclick="openModal('Pixel Game')">
+<img src="img/project2.png">
+<p>Pixel Adventure Game</p>
+</div>
+
+</div>
+</section>
+
+<!-- Timeline -->
+<section id="timeline" class="section" data-aos="fade-up">
+<h2>Timeline</h2>
+<div class="timeline">
+<div class="time-item">2023 - เริ่มเรียนเขียนโปรแกรม</div>
+<div class="time-item">2024 - ทำเว็บ Ecommerce</div>
+<div class="time-item">2025 - ทำเกม Pixel Unity</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section contact">
+<h2>Contact Me</h2>
+
+<form id="contactForm">
+<input placeholder="Name" id="name">
+<input placeholder="Email" id="email">
+<textarea placeholder="Message" id="message"></textarea>
+<button>Send</button>
+</form>
+
+<p id="status"></p>
+</section>
+
+<!-- Scroll Top -->
+<button id="topBtn">⬆</button>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <p id="modalText"></p>
+    <button onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<script src="particles.js"></script>
+<script src="cursor.js"></script>
+<script src="main.js"></script>
+<script src="voice.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+</body>
+</html>

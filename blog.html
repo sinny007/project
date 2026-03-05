@@ -1,0 +1,14 @@
+<h1>🧠 Blog</h1>
+<div id="blogs"></div>
+
+<script>
+fetch("/api/blog")
+.then(r=>r.json())
+.then(data=>{
+ let html="";
+ data.forEach(b=>{
+  html+=`<h2>${b.title}</h2><p>${b.content}</p><hr>`;
+ });
+ blogs.innerHTML=html;
+});
+</script>
